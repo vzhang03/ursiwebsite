@@ -1,0 +1,119 @@
+/* General Formatting of Components*/ 
+
+.Container{
+  display: flex;
+  margin: 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.Navigation{
+  position: fixed;
+  background-color: #ffffff;
+  /* background-color: lightgrey; */
+  height: 56px;
+  width: 100%;
+}
+
+.Paths{
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  /* background-color: lightblue; */
+  text-align: center;
+  height: 100vh;
+}
+
+/* Indivdual Formatting Navbar*/
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: left;
+}
+
+nav li {
+  margin-right: 25px;
+}
+
+/* Content */
+.titlepage {
+  background-color: rgb(255, 172, 185);
+  padding: 20px;
+  margin-top: 50px;
+}
+
+hr {
+  background-color: black;
+  border: none;
+  height: 1px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.mainTitleFormat ul{
+  list-style: none;
+  text-align: left;
+}
+
+.scroll-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.scroll-link::before {
+  content: '';
+  background-color: hsla(196, 61%, 58%, .75);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 1px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.scroll-link:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+.mainTextFormat {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.mainTextFormatBox {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 20px;
+  width: 50%
+}
+
+/* Content Images */
+
+.graphcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphcaption p {
+  flex-grow: 1;
+  width: 505;
+}
+
+.graphs {
+  width: 50%;
+}
+
+/* Fonts */
+
+.header {
+  font-family: Helvetica, Arial, sans-serif, 'Gill Sans', 'Gill Sans MT';
+}
+
+.text { 
+  font-family: Garamond, 'Times New Roman', Times, serif;
+}
