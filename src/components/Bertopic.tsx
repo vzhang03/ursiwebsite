@@ -18,7 +18,7 @@ function Bertopic(){
                         <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-100}>
                             Results
                         </Link>
-                    </li>
+                    </li>2
                     <li className='header'>
                         <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-100}> 
                             Visualizations
