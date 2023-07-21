@@ -5,6 +5,7 @@ function Navigation() {
     <nav>
       <ul>
         <li className='header'> <Link to="/">Home</Link> </li>
+        <li className='header'> <Link to="/abstract">Abstract</Link></li>
         <li className='header'> <Link to="/ldamallet">LDA Mallet</Link></li>
         <li className='header'> <Link to="/bertopic">BERTopic</Link> </li>
         <li className='header'> <Link to="/data">Data</Link> </li>

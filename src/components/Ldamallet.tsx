@@ -4,29 +4,34 @@ function Ldamallet(){
     return (
         <div>
             <div className='mainTitleFormat'>
-                <h1 className='header'>LDA Mallet</h1>
-                <p className='text'>Latent Dirichlet allocation is a generative probablistic model of a corpus.</p>
-                <ul>
-                    <li className='header'>
-                        <Link to='section1' className='scroll-link' smooth={true} duration={500} offset={-100}>
-                            Introduction
-                        </Link>
-                    </li>
-                    <li className='header'>
-                        <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-100}>
-                            Results
-                        </Link>
-                    </li>
-                    <li className='header'>
-                        <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-100}> 
-                            Visualizations
-                        </Link>
-                    </li>
-                </ul>
-                <hr />
+                <h1 className='header mainTitleFormatTitle'>LDA Mallet</h1>
+                <div className='mainTitleFormatBox'>
+                    <ul>
+                        <li className='header'>
+                            <Link to='section1' className='scroll-link' smooth={true} duration={500} offset={-80}>
+                                Introduction
+                            </Link>
+                        </li>
+                        <li className='header'>
+                            <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-80}>
+                                Results
+                            </Link>
+                        </li>
+                        <li className='header'>
+                            <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-80}> 
+                                Visualizations
+                            </Link>
+                        </li>
+                    </ul>
+                    <p className='text'>Hello what does this do, what should we put here</p>
+                </div>
             </div>
-
-            <div className='mainTextFormat' id='section1'>
+            
+            <div className='mainTextFormatTitle' id='section1'>
+                <hr />
+                <h1 className='header'>introduction</h1>
+            </div>
+            <div className='mainTextFormat'>
                 <div className='mainTextFormatBox'>
                     <h3 className='header'>Title of body</h3>
                     <p className='text'>for things to do next:
@@ -46,7 +51,10 @@ function Ldamallet(){
             </div>
 
 
-            <hr />
+            <div className='mainTextFormatTitle' id='section2'>
+                <hr />
+                <h1 className='header'>results</h1>
+            </div>
             <div className='mainTextFormat' id='section2'>
                 <div className='mainTextFormatBox'>
                     <h3 className='header'>Title of body</h3>
@@ -66,8 +74,11 @@ function Ldamallet(){
                 </div>
             </div>
 
-            <hr />
-            <div className='mainTextFormat' id='section3'>
+            <div className='mainTextFormatTitle' id='section3'>
+                <hr />
+                <h1 className='header'>Visualizations</h1>
+            </div>
+            <div className='mainTextFormat'>
                 <div className='mainTextFormatBox'>
                     <h3 className='header'>Title of body</h3>
                     <p className='text'>for things to do next:

@@ -7,30 +7,35 @@ function Bertopic(){
         <div>
             <div className='mainTitleFormat'>
                 <h1 className='header'>BERTopic</h1>
-                <p className='text'>BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions.</p>
-                <ul>
-                    <li className='header'>
-                        <Link to='section1' className='scroll-link' smooth={true} duration={500} offset={-100}>
-                            Introduction
-                        </Link>
-                    </li>
-                    <li className='header'>
-                        <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-100}>
-                            Results
-                        </Link>
-                    </li>2
-                    <li className='header'>
-                        <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-100}> 
-                            Visualizations
-                        </Link>
-                    </li>
-                </ul>
-                <hr />  
+                <div className='mainTitleFormatBox'>
+                    <ul>
+                        <li className='header'>
+                            <Link to='section1' className='scroll-link' smooth={true} duration={500} offset={-80}>
+                                Introduction
+                            </Link>
+                        </li>
+                        <li className='header'>
+                            <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-80}>
+                                Results
+                            </Link>
+                        </li>
+                        <li className='header'>
+                            <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-80}> 
+                                Visualizations
+                            </Link>
+                        </li>
+                    </ul>
+                    <p className='text'>With special thanks to Dr. Marten Grootendorst for his work maintaining BERTopic.</p>
+                </div>  
             </div>
 
-            <div className='mainTextFormat' id='section1'>
+            <div className='mainTextFormatTitle' id='section1'>
+                <hr />
+                <h1 className='header'>introduction</h1>
+            </div>
+            <div className='mainTextFormat'>
                 <div className='mainTextFormatBox' >
-                    <h3 className='header'>Title of body</h3>
+                    <h3 className='header'>Introduction</h3>
                     <p className='text'>for things to do next:
                         need to figure out how to format
                         individual sections,
@@ -42,13 +47,16 @@ function Bertopic(){
                     </p>
                 </div>
                 <div className='mainTextFormatBox'>
-                    <h3 className='header'>Next element</h3>
+                    <h3 className='header'>Move over to right</h3>
                     <p className='text'>Blah blah blah these are a bunch of items being listed</p>
                 </div>
             </div>
 
-            <hr />
-            <div className='mainTextFormat' id='section2'>
+            <div className='mainTextFormatTitle' id='section2'>
+                <hr />
+                <h1 className='header'>results</h1>
+            </div>
+            <div className='mainTextFormat'>
                 <div className='mainTextFormatBox'>
                     <h3 className='header'>Title of body</h3>
                     <p className='text'>for things to do next:
@@ -71,7 +79,10 @@ function Bertopic(){
                 <p className='text'>this graph is a list of the different topics that were found by BERTopic</p>
             </div>
             
-            <hr />
+            <div className='mainTextFormatTitle' id='section3'>
+                <hr />
+                <h1 className='header'>visualizations</h1>
+            </div>
             <div className='mainTextFormat' id='section3'>
                 <div className='mainTextFormatBox'>
                     <h3 className='header'>Title of body</h3>

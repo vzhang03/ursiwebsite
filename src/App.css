@@ -13,6 +13,7 @@
   /* background-color: lightgrey; */
   height: 56px;
   width: 100%;
+  z-index: 1;
 }
 
 .Paths{
@@ -33,15 +34,30 @@ nav ul {
 
 nav li {
   margin-right: 25px;
+  text-decoration: none;
 }
 
-/* Content */
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav li a:hover{
+  color: #007bff;
+}
+
+/* HomePage */
 .titlepage {
   background-color: rgb(255, 172, 185);
   padding: 20px;
   margin-top: 50px;
 }
 
+.ursilogo{
+  width: 200px;
+}
+
+/* Content */
 hr {
   background-color: black;
   border: none;
@@ -55,9 +71,24 @@ hr {
   text-align: left;
 }
 
+.mainTitleFormat h1 {
+  font-size: 4.5rem;
+}
+
+.mainTitleFormatBox {
+  display: flex;
+}
+
+.mainTitleFormatBox p {
+  width: 20%;
+  margin-left: auto;
+  text-align: right;
+}
+
 .scroll-link {
   text-decoration: none;
   position: relative;
+  font-size: 2em;
 }
 
 .scroll-link::before {
@@ -67,7 +98,7 @@ hr {
   left: 0;
   bottom: 3px;
   width: 100%;
-  height: 1px;
+  height: 2px;
   z-index: -1;
   transition: all .3s ease-in-out;
 }
@@ -83,7 +114,13 @@ hr {
   justify-content: left;
 }
 
+.mainTextFormatTitle{
+  width: 100%;
+  font-size: 1em;
+}
+
 .mainTextFormatBox {
+  padding-left: 20px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -116,4 +153,8 @@ hr {
 
 .text { 
   font-family: Garamond, 'Times New Roman', Times, serif;
+}
+
+.alicia {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
