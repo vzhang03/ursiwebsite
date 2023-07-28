@@ -4,13 +4,13 @@ import Data from './components/Data';
 import NotFound from './components/NotFound';
 import Home from './components/Home'
 import Ldamallet from './components/Ldamallet'
-import Abstract from './components/Abstract'
+import Welcome from './components/Welcome'
 
 function Paths() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="abstract" element={<Abstract />} />
+      <Route path="/welcome" element={<Welcome />} />
       <Route path="/ldamallet" element={<Ldamallet />} />
       <Route path="/bertopic" element={<Bertopic />} />
       <Route path="/data" element={<Data />} />

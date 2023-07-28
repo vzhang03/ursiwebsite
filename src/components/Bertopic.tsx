@@ -1,5 +1,6 @@
 import TopicChart from '../assets/25_topics.png';
 import TopicHierarchy from '../assets/25_topic_hierarchy.png';
+import BertopicChart from '../assets/bertopic_explanation.png'
 import { Link } from 'react-scroll';
 
 function Bertopic(){
@@ -10,17 +11,22 @@ function Bertopic(){
                 <div className='mainTitleFormatBox'>
                     <ul>
                         <li className='header'>
-                            <Link to='section1' className='scroll-link' smooth={true} duration={500} offset={-80}>
+                            <Link to='section1' className='scroll-link' smooth={true} duration={500} offset={-70}>
                                 Introduction
                             </Link>
                         </li>
                         <li className='header'>
-                            <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-80}>
+                            <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-70}>
+                                Methodology
+                            </Link>
+                        </li>
+                        <li className='header'>
+                            <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-70}> 
                                 Results
                             </Link>
                         </li>
                         <li className='header'>
-                            <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-80}> 
+                            <Link to='section4' className='scroll-link' smooth={true} duration={500} offset={-70}> 
                                 Visualizations
                             </Link>
                         </li>
@@ -31,34 +37,34 @@ function Bertopic(){
 
             <div className='mainTextFormatTitle' id='section1'>
                 <hr />
-                <h1 className='header'>introduction</h1>
+                <h1 className='header'>Introduction</h1>
             </div>
             <div className='mainTextFormat'>
                 <div className='mainTextFormatBox' >
-                    <h3 className='header'>Introduction</h3>
-                    <p className='text'>for things to do next:
-                        need to figure out how to format
-                        individual sections,
-                        need to find a color scheme 
-                        and font style, 
-                        small things such as button lightup
-                        and smooth scrolling or the thing 
-                        that lets jump to diffferent sections
-                    </p>
+                    <h3 className='header'>What is BERTopic?</h3>
+                    <p className='text'>Topic modeling is a type of statistical modeling using unsupervised machine learning to identify topics and group together related words within the text. The value of topic modeling lies in its ability to identify unseen patterns in word usage and is used for utility rather than accuracy.</p>
                 </div>
                 <div className='mainTextFormatBox'>
-                    <h3 className='header'>Move over to right</h3>
+                    <h3 className='header'>How does BERTopic work?</h3>
                     <p className='text'>Blah blah blah these are a bunch of items being listed</p>
+                </div>
+            </div>
+            <div className='graphcaption'>
+                <div className='graphcaptionLeft'>
+                    <img src ={BertopicChart} id='topicHierarchy' className='graphs'></img>
+                </div>
+                <div className='graphcaptionRight'>
+                    <p className='text'>In the image on the left, we can see how </p>
                 </div>
             </div>
 
             <div className='mainTextFormatTitle' id='section2'>
                 <hr />
-                <h1 className='header'>results</h1>
+                <h1 className='header'>Methodology</h1>
             </div>
             <div className='mainTextFormat'>
                 <div className='mainTextFormatBox'>
-                    <h3 className='header'>Title of body</h3>
+                    <h3 className='header'>Tuning and getting the Topic Model to work</h3>
                     <p className='text'>for things to do next:
                         need to figure out how to format
                         individual sections,
@@ -75,15 +81,26 @@ function Bertopic(){
                 </div>
             </div>
             <div className='graphcaption'> {/* Might want to add a title for graph */}
-                <img src={TopicChart} id='topicChart' className='graphs'></img>
-                <p className='text'>this graph is a list of the different topics that were found by BERTopic</p>
+                <div className='graphcaptionLeft'>
+                    <img src={TopicChart} id='topicChart' className='graphs'></img>
+                </div>
+                <div className='graphcaptionRight'>
+                    <p className='text'>this graph is a list of the different topics that were found by BERTopic</p>
+                </div>
+            </div>
+            <div className='graphcaption'> {/* Might want to add a title for graph */}
+                <div className='graphcaptionLeft'>
+                    <img src={TopicChart} id='topicChart' className='graphs'></img>
+                </div>
+                <div className='graphcaptionRight'>
+                    <p className='text'>this graph is a list of the different topics that were found by BERTopic</p>
+                </div>
             </div>
             
             <div className='mainTextFormatTitle' id='section3'>
-                <hr />
-                <h1 className='header'>visualizations</h1>
+                <h1 className='header'>Results</h1>
             </div>
-            <div className='mainTextFormat' id='section3'>
+            <div className='mainTextFormat'>
                 <div className='mainTextFormatBox'>
                     <h3 className='header'>Title of body</h3>
                     <p className='text'>for things to do next:
@@ -101,14 +118,36 @@ function Bertopic(){
                     <p className='text'>Blah blah blah these are a bunch of items being listed</p>
                 </div>
             </div>
-
-
-            <hr />
-            <div className='graphcaption'>
-                <img src ={TopicHierarchy} id='topicHierarchy' className='graphs'></img>
-                <p className='text'>this is the caption for the second image</p>
+            <div className='figurecaption'>
+                <div className='figurecaptionTop'>
+                    <img src ={TopicHierarchy} id='topicHierarchy' className='graphs'></img>
+                </div>
+                <div className='figurecaptionBot'>
+                    <p className='text'>this is the caption for the second image</p>
+                </div>
             </div>
-            <h3>Topics Over Time</h3>
+
+            <div className='mainTextFormatTitle' id='section4'>
+                <h1 className='header'>Visualizations</h1>
+            </div>
+            <div className='mainTextFormat'>
+                <div className='mainTextFormatBox'>
+                    <h3 className='header'>Title of body</h3>
+                    <p className='text'>for things to do next:
+                        need to figure out how to format
+                        individual sections,
+                        need to find a color scheme 
+                        and font style, 
+                        small things such as button lightup
+                        and smooth scrolling or the thing 
+                        that lets jump to diffferent sections
+                    </p>
+                </div>
+                <div className='mainTextFormatBox'>
+                    <h3 className='header'>Next element</h3>
+                    <p className='text'>Blah blah blah these are a bunch of items being listed</p>
+                </div>
+            </div>
         </div>
     );
 };

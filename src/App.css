@@ -83,6 +83,7 @@ hr {
   width: 20%;
   margin-left: auto;
   text-align: right;
+  padding-right: 20px;
 }
 
 .scroll-link {
@@ -119,13 +120,23 @@ hr {
   font-size: 1em;
 }
 
+.mainTextFormat h3 {
+  font-size: 1.5em;
+}
+
 .mainTextFormatBox {
-  padding-left: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-right: 20px;
   width: 50%
+}
+
+.singleParagraph p {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
 }
 
 /* Content Images */
@@ -134,25 +145,64 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px 50px 50px 50px;
+
+  border: 1px solid #ccc; /* Smaller border for the caption box */
+  margin-bottom: 20px;
 }
 
-.graphcaption p {
-  flex-grow: 1;
-  width: 505;
+.graphcaptionLeft {
+  display: flex;
+  flex: 1;
+  flex-shrink: 1;
 }
 
-.graphs {
-  width: 50%;
+.graphcaptionLeft img{
+  max-width: 90%;
+  height: auto;
+}
+
+.graphcaptionRight {
+  flex: 1;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.graphcaptionRight p{
+  padding: 40px;
+}
+
+.figurecaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ccc; /* Smaller border for the caption box */
+  gap: 0px;
+  margin-bottom: 50px;
+}
+
+.figurecaptionBot p{
+  margin-top: 0px;
+}
+
+.figurecaptionTop img{
+  max-width: 90%;
+  height: auto;
 }
 
 /* Fonts */
 
 .header {
-  font-family: Helvetica, Arial, sans-serif, 'Gill Sans', 'Gill Sans MT';
+  font-family: Garamond, 'Times New Roman', Times, serif;
 }
 
 .text { 
-  font-family: Garamond, 'Times New Roman', Times, serif;
+  font-family: Helvetica, Arial, sans-serif, 'Gill Sans', 'Gill Sans MT';
 }
 
 .alicia {

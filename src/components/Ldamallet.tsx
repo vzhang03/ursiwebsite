@@ -8,17 +8,17 @@ function Ldamallet(){
                 <div className='mainTitleFormatBox'>
                     <ul>
                         <li className='header'>
-                            <Link to='section1' className='scroll-link' smooth={true} duration={500} offset={-80}>
+                            <Link to='section1' className='scroll-link' smooth={true} duration={500} offset={-70}>
                                 Introduction
                             </Link>
                         </li>
                         <li className='header'>
-                            <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-80}>
+                            <Link to='section2' className='scroll-link' smooth={true} duration={500} offset={-70}>
                                 Results
                             </Link>
                         </li>
                         <li className='header'>
-                            <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-80}> 
+                            <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-70}> 
                                 Visualizations
                             </Link>
                         </li>
@@ -29,7 +29,7 @@ function Ldamallet(){
             
             <div className='mainTextFormatTitle' id='section1'>
                 <hr />
-                <h1 className='header'>introduction</h1>
+                <h1 className='header'>Introduction</h1>
             </div>
             <div className='mainTextFormat'>
                 <div className='mainTextFormatBox'>
@@ -53,7 +53,7 @@ function Ldamallet(){
 
             <div className='mainTextFormatTitle' id='section2'>
                 <hr />
-                <h1 className='header'>results</h1>
+                <h1 className='header'>Results</h1>
             </div>
             <div className='mainTextFormat' id='section2'>
                 <div className='mainTextFormatBox'>
