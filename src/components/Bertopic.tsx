@@ -2,6 +2,8 @@ import TopicChart from '../assets/25_topics.png';
 import TopicHierarchy from '../assets/25_topic_hierarchy.png';
 import BertopicChart from '../assets/bertopic_explanation.png'
 import { Link } from 'react-scroll';
+import ImageCaption from './ImageCaption'
+import BookCover from '../assets/book_covers.png'
 
 function Bertopic(){
     return (
@@ -49,14 +51,21 @@ function Bertopic(){
                     <p className='text'>Blah blah blah these are a bunch of items being listed</p>
                 </div>
             </div>
-            <div className='graphcaption'>
+
+            <ImageCaption
+                imageUrl={BertopicChart}
+                captionText='In the image on the left, we can see how the two are being usedIn the image on the left, we can see howIn the image on the left, we can see how.'
+                additionalClassName='graphcaption'
+            />
+
+            {/* <div className='graphcaption'>
                 <div className='graphcaptionLeft'>
                     <img src ={BertopicChart} id='topicHierarchy' className='graphs'></img>
                 </div>
                 <div className='graphcaptionRight'>
                     <p className='text'>In the image on the left, we can see how </p>
                 </div>
-            </div>
+            </div> */}
 
             <div className='mainTextFormatTitle' id='section2'>
                 <hr />

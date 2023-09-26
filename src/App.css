@@ -64,6 +64,7 @@ hr {
   height: 1px;
   width: 100%;
   margin: 20px auto;
+  margin-bottom: 50px;
 }
 
 .mainTitleFormat ul{
@@ -113,6 +114,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  padding-bottom: 50px;
 }
 
 .mainTextFormatTitle{
@@ -120,17 +122,28 @@ hr {
   font-size: 1em;
 }
 
-.mainTextFormat h3 {
-  font-size: 1.5em;
-}
-
 .mainTextFormatBox {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 50%
+}
+
+.mainTextFormatBox h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.mainTextFormatBox p{
+  margin: 0px;
+  font-size: 1.2em;
+  overflow-wrap: break-word;
+  max-width: 85%;
+}
+
+.singleParagraph h3{
+  font-size: 3em;
 }
 
 .singleParagraph p {
@@ -148,27 +161,27 @@ hr {
   padding: 50px 50px 50px 50px;
 
   border: 1px solid #ccc; /* Smaller border for the caption box */
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
-.graphcaptionLeft {
+.graphcaptionFirst {
   display: flex;
   flex: 1;
   flex-shrink: 1;
 }
 
-.graphcaptionLeft img{
+.graphcaptionSecond {
+  display: flex;
+  flex: 1;
+  flex-shrink: 1;
+}
+
+.graphcaptionFirst img{
   max-width: 90%;
   height: auto;
 }
 
-.graphcaptionRight {
-  flex: 1;
-  display: flex;
-  flex-shrink: 1;
-}
-
-.graphcaptionRight p{
+.graphcaptionSecond p{
   padding: 40px;
 }
 
@@ -186,11 +199,11 @@ hr {
   margin-bottom: 50px;
 }
 
-.figurecaptionBot p{
+.figurecaptionSecond p{
   margin-top: 0px;
 }
 
-.figurecaptionTop img{
+.figurecaptionFirst img{
   max-width: 90%;
   height: auto;
 }
@@ -208,3 +221,28 @@ hr {
 .alicia {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
+/* Test Code */
+
+.textbox {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.textbox.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.imageCaption {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.imageCaption.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
