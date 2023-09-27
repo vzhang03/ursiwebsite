@@ -10,7 +10,7 @@ function Abstract() {
             <div className='mainTitleFormat'>
                 <h1 className='header'>Our Project</h1>
             </div>
-
+            
             <div className='mainTextFormat'>
                 <TextBox 
                     title="About us"

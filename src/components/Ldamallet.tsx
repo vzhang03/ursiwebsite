@@ -1,4 +1,7 @@
 import { Link } from 'react-scroll';
+import LDATime from '../assets/lda_time.png';
+import TextBox from './TextBox'
+import ImageCaption from './ImageCaption';
 
 function Ldamallet(){
     return (
@@ -17,13 +20,8 @@ function Ldamallet(){
                                 Results
                             </Link>
                         </li>
-                        <li className='header'>
-                            <Link to='section3' className='scroll-link' smooth={true} duration={500} offset={-70}> 
-                                Visualizations
-                            </Link>
-                        </li>
                     </ul>
-                    <p className='text'>Hello what does this do, what should we put here</p>
+                    <p className='text'>The traditional model</p>
                 </div>
             </div>
             
@@ -31,71 +29,29 @@ function Ldamallet(){
                 <hr />
                 <h1 className='header'>Introduction</h1>
             </div>
-            <div className='mainTextFormat'>
-                <div className='mainTextFormatBox'>
-                    <h3 className='header'>Title of body</h3>
-                    <p className='text'>for things to do next:
-                        need to figure out how to format
-                        individual sections,
-                        need to find a color scheme 
-                        and font style, 
-                        small things such as button lightup
-                        and smooth scrolling or the thing 
-                        that lets jump to diffferent sections
-                    </p>
-                </div>
-                <div className='mainTextFormatBox'>
-                    <h3 className='header'>Next element</h3>
-                    <p className='text'>Blah blah blah these are a bunch of items being listed</p>
-                </div>
-            </div>
 
+            <div className='mainTextFormat'>
+                <TextBox 
+                    title="Removing Boilerplate"
+                    content="Using the Project Gutenberg corpus of just over fifty-five thousand books and its corresponding metadata, we developed a filtering process to iterate through the books. We began by removing basic boilerplate including: forewords, afterwords, tables of contents and  unrelated text. We used this as a starting point for running LDA and BERTopic."
+                    additionalClassName='mainTextFormatBox'
+                />
+                <TextBox 
+                    title="Filtering the Text"
+                    content="Using the filtered text, we performed more filtering: tokenizing the text, removing stop words and lowercasing every word. We avoided lemmatization or selecting parts of speech to limit pre-processing while keeping the texts we ran to be as similar to BERTopic."
+                    additionalClassName='mainTextFormatBox'
+                />
+            </div>
 
             <div className='mainTextFormatTitle' id='section2'>
                 <hr />
                 <h1 className='header'>Results</h1>
             </div>
-            <div className='mainTextFormat' id='section2'>
-                <div className='mainTextFormatBox'>
-                    <h3 className='header'>Title of body</h3>
-                    <p className='text'>for things to do next:
-                        need to figure out how to format
-                        individual sections,
-                        need to find a color scheme 
-                        and font style, 
-                        small things such as button lightup
-                        and smooth scrolling or the thing 
-                        that lets jump to diffferent sections
-                    </p>
-                </div>
-                <div className='mainTextFormatBox'>
-                    <h3 className='header'>Next element</h3>
-                    <p className='text'>Blah blah blah these are a bunch of items being listed</p>
-                </div>
-            </div>
-
-            <div className='mainTextFormatTitle' id='section3'>
-                <hr />
-                <h1 className='header'>Visualizations</h1>
-            </div>
-            <div className='mainTextFormat'>
-                <div className='mainTextFormatBox'>
-                    <h3 className='header'>Title of body</h3>
-                    <p className='text'>for things to do next:
-                        need to figure out how to format
-                        individual sections,
-                        need to find a color scheme 
-                        and font style, 
-                        small things such as button lightup
-                        and smooth scrolling or the thing 
-                        that lets jump to diffferent sections
-                    </p>
-                </div>
-                <div className='mainTextFormatBox'>
-                    <h3 className='header'>Next element</h3>
-                    <p className='text'>Blah blah blah these are a bunch of items being listed</p>
-                </div>
-            </div>
+            <ImageCaption
+                imageUrl={LDATime}
+                captionText='A visualization of the topics over time found by the LDA Mallet model.'
+                additionalClassName='figurecaption'
+            />
 
         </div>
     )
